@@ -112,7 +112,7 @@ def visualize_stn():
         axarr[0].set_title('Dataset Images')
 
         axarr[1].imshow(out_grid)
-        axarr[1].set_titile('Tranformed Images')
+        axarr[1].set_title('Tranformed Images')
 
 
 for epoch in range(1, 20+1):
