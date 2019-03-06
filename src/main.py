@@ -107,7 +107,7 @@ def visualize_stn():
         out_grid = convert_image_np(torchvision.utils.make_grid(transformed_input_tensor))
 
         # Plot the results side-by-side
-        f, axarr = plt.subplot(1, 2)
+        f, axarr = plt.subplots(1, 2)
         axarr[0].imshow(in_grid)
         axarr[0].set_title('Dataset Images')
 
