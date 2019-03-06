@@ -45,7 +45,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.01)
 
 def train(epoch):
     model.train()
-    for batch_idx, (data, traget) in enumerate(train_loader):
+    for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
         output = model(data)
