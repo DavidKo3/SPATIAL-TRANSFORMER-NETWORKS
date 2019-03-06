@@ -58,7 +58,7 @@ def train(epoch):
                 100. * batch_idx / len(train_loader), loss.item()))
 
 
-def test():
+def re_test():
     model.eval()
     test_loss = 0
     correct = 0
@@ -117,7 +117,7 @@ def visualize_stn():
 
 for epoch in range(1, 20+1):
     train(epoch)
-    test()
+    re_test()
 
 
 # Visualize the STN transformation on some input batch
