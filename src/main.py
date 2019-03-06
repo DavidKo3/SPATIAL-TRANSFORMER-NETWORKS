@@ -29,10 +29,10 @@ train_loader = torch.utils.data.DataLoader(
 
 # test data
 test_loader = torch.utils.data.DataLoader(
-    datasets.MNIST(root=".", train=False, transform=transforms.Compose([
+    datasets.MNIST(root='.', train=False, transform=transforms.Compose([
         transforms.ToTensor(),
-        transforms.Normalize((0.1307,),(0.3081,))
-    ])), batch_size=64, shuffle=True, num_works=4)
+        transforms.Normalize((0.1307,), (0.3081,))
+    ])), batch_size=64, shuffle=True, num_workers=4)
 
 
 
