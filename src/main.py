@@ -15,6 +15,7 @@ from model import Net
 plt.ion()   # interactive mode
 
 
+
 # data loader
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
